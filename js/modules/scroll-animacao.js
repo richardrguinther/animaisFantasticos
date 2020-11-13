@@ -10,9 +10,11 @@ export default function initAnimacaoScroll() {
 
       if (sectionTop <= tamanhoScroll) {
         section.classList.add(activeClass);
-      } else if (section.classList.contains("ativo")) {
-        section.classList.remove(activeClass);
-      }
+      } 
+      
+      // else if (section.classList.contains("ativo")) {
+      //   section.classList.remove(activeClass);
+      // }
     });
   }
 

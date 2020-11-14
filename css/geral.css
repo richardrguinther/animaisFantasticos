@@ -277,6 +277,18 @@ body {
 }
 
 
+.js [data-anime='scroll'] {
+    opacity   : 0;
+    transform : translate3d(-30px, 0, 0);
+    transition: .3s;
+}
+
+.js [data-anime='scroll'].ativo {
+    opacity  : 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/*
 .js .js-scroll {
     opacity   : 0;
     transform : translate3d(-30px, 0, 0);
@@ -287,6 +299,7 @@ body {
     opacity  : 1;
     transform: translate3d(0, 0, 0);
 }
+*/
 
 [data-semana]::after {
     display         : inline-block;

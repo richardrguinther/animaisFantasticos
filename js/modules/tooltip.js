@@ -5,6 +5,7 @@ export default class Tooltip {
     this.onMouseLeave = this.onMouseLeave.bind(this);
     this.onMouseMove = this.onMouseMove.bind(this);
     this.onMouseOver = this.onMouseOver.bind(this);
+    this.criartooltipBox = this.criartooltipBox.bind(this);
   }
 
   // Move a tooltip com base em seus estilos, de acordo com a posição do mouse
@@ -28,6 +29,7 @@ export default class Tooltip {
   criartooltipBox(element) {
     const tooltipBox = document.createElement("div");
     const text = element.getAttribute("aria-label");
+    
     tooltipBox.classList.add("tooltip");
     tooltipBox.innerText = text;
     document.body.appendChild(tooltipBox);
